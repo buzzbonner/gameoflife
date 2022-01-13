@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0823213f-cc43-40ab-8a21-470e36ea7215": {
+      "ProjectGuid": "0823213f-cc43-40ab-8a21-470e36ea7215",
+      "DisplayName": "GameOfLife.Console",
+      "ColorIndex": 0
+    },
+    "7609766a-d820-4aeb-8fd6-1804efe79dbc": {
+      "ProjectGuid": "7609766a-d820-4aeb-8fd6-1804efe79dbc",
+      "DisplayName": "GameOfLife.Core",
+      "ColorIndex": 1
+    },
+    "f822e73e-5c2f-4b23-a714-b71a4e86b927": {
+      "ProjectGuid": "f822e73e-5c2f-4b23-a714-b71a4e86b927",
+      "DisplayName": "GameOfLife.Core.Tests",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}
