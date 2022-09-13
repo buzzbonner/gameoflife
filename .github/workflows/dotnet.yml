@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -17,8 +17,13 @@ jobs:
       uses: actions/setup-dotnet@v2
       with:
         dotnet-version: 6.0.x
-    - name: Official SonarQube Scan
-      uses: SonarSource/sonarqube-scan-action@v1.1.0
+    - name: Run .NET Code Analysis
+      uses: dotnet/code-analysis@v1
+      id: code-analysis
+      with:
+        solution: GameOfLife.Console.sln
+        build-breaking: true
+        all-categories: all
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
