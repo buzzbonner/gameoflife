@@ -4,7 +4,7 @@ on:
   push:
   
 env:
-  BRANCH_NAME: 'feature\this_is_a_test'
+  BRANCH_NAME: 'feature_this_is_a_test'
   # ${{ github.head_ref || github.ref_name }}
 
 jobs:
@@ -15,6 +15,6 @@ jobs:
     steps:
     - name: Setup .NET
       shell: bash
-      run: echo "BRANCH_NAME=${BRANCH_NAME//\/-}" >> $GITHUB_ENV
+      run: echo "BRANCH_NAME=${BRANCH_NAME//_/-}" >> $GITHUB_ENV
     - name: Test
       run: echo $BRANCH_NAME
