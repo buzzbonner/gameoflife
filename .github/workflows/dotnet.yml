@@ -14,6 +14,7 @@ jobs:
 
     steps:
     - name: Setup .NET
+      shell: bash
       run: echo "BRANCH_NAME=$(echo $BRANCH_NAME | cut -c 1-2)" >> $GITHUB_ENV
     - name: Test
       run: echo $BRANCH_NAME
