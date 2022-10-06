@@ -9,10 +9,10 @@ env:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Setup .NET
-      run: bash echo "BRANCH_NAME=$(echo $GITHUB_SHA | cut -c 1-2)" >> $GITHUB_ENV
+      run: echo "BRANCH_NAME=$(echo $GITHUB_SHA | cut -c 1-2)" >> $GITHUB_ENV
     - name: Test
       run: echo $BRANCH_NAME
